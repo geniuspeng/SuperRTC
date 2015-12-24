@@ -1,0 +1,166 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header,
+.left,
+.right {
+    position: absolute;
+}
+
+header {
+    left: 10px;
+    top: 10px;
+    right:  10px;
+    height:  150px;
+    border:  solid #000 1px;
+}
+.left {
+    left: 10px;
+    top: 170px;
+    bottom: 10px;
+    width: 500px;
+    border:  solid #000 1px;
+    overflow: hidden;
+}
+
+.right {
+    right: 10px;
+    top: 170px;
+    bottom: 10px;
+    left: 520px;
+    border: solid #000 1px;
+}
+
+#videos {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+#videos video {
+    display: inline-block;
+    width: 32%;
+}
+
+#chat {
+    position: absolute;
+    left: 0;
+    top: 350px;
+    bottom: 10px;
+    width: 100%;
+    border: 1px solid #000;
+}
+#chat .msgIpt, #chat .fileIpt{
+    position: absolute;
+    left: 0;
+    width: 80%;
+}
+#chat .sendBtn, #chat .sendFileBtn {
+    position: absolute;
+    left: 80%;
+    width: 20%;
+}
+#chat .msgIpt,#chat .sendBtn {
+    bottom: 0;
+}
+#chat .fileIpt, #chat .sendFileBtn {
+    bottom: 30px;
+}
+
+#chat .msgs {
+    padding: 5%;
+}
+.msgs {
+    height: 350px;
+    border: solid #000 1px;
+}
+#chat .msgs p{
+    margin: 0.3em 0;
+}
+#files {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+}
+#files .name {
+}
+#files .percent {
+    font-weight: bold;
+    text-decoration: none
+}
+
+#container{width: 800px;margin-left: 200px;}
+#graph {
+    border: 1px solid #87ceeb;
+    cursor: url(../images/Pen.cur), auto;
+
+}
+#graph:hover {
+
+    cursor: url(../images/Pen.cur), auto;
+
+}
+#userlist {
+    width: 200px;
+    height: 490px;
+    border: 1px solid #87ceeb;
+    float: left;
+    margin-left: 10px;;
+    padding: 5px 0;
+}
+
+#users {
+    width: 200px;
+}
+
+#message {
+    height: 100px;
+    overflow-y: auto;
+}
+
+#messagebox {
+    clear: both;
+    width: 712px;
+    border: 1px solid #87ceeb;
+}
+
+#drawCanvas{
+    float: left;
+    width: 500px;
+}
+
+#drawCanvas #colorSelector{
+
+    background-color: #000;
+}
+.colorpicker input{
+    border: 0px;
+    border-color: transparent;
+    width: 50px;
+}
+.colorpicker input:focus,.colorpicker input:hover{
+    border: 0px;
+    border-color: transparent;
+    -webkit-box-shadow: 0
+-moz-box-shadow: 0
+box-shadow: 0
+}
+#tools{
+    float: left;
+}
